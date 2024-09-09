@@ -1,0 +1,109 @@
+/* GameScreens Stylesheet Homepage*/
+
+/* Default styling for the page */
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    background-color: grey;
+}
+
+/* Styling the headings */
+h1 a{
+    text-decoration: none; 
+    color:black;
+}
+
+/* Stlying the boxes that are clicked for each games page in the grid layout */
+.gameBoxes{
+    display: grid;
+    text-align: center;
+}
+
+/* Removing hyperlink decoration from the boxes */
+.gameBoxes a{
+    text-decoration: none; 
+    color:black;
+}
+
+/* Outlining the boxes */
+.game{
+    outline-style: solid; 
+}
+
+/*Media query for desktop and laptop devices*/
+@media screen and (min-width: 900px){
+
+    /* Stlying and positioning the heading */
+    h1{
+        text-align: center;
+        font-size: 4vw;
+        margin-bottom:0;
+        
+    }
+
+    /* Stlying and positioning the subheading */
+    h2{
+        text-align: center;
+        font-size: 2vw;
+    }
+
+    /* Stlying the boxes for desktop devices in a 3 rows per column layout */
+    .gameBoxes{
+        grid-gap: 3%;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        font-size: 3vw;
+        text-align: center;
+        margin: 2%;
+    }
+
+    /* Stlying and positioning the boxes within the gameboxes grid layout */
+    .game{
+        padding-top:55%;
+        padding-bottom:55%;
+        width: 30vw;
+        height: 7vw;
+    }
+
+    /* Adding an on hover which makes the outine for the boxes thicker */
+    .game:hover{
+        outline-width: thick;
+    }
+
+}
+/*Media query and layout for mobile phones*/
+@media screen and (max-width: 900px) {
+
+    /* Stlying and positioning the heading */
+    h1{
+        text-align: center;
+        font-size: 11vw;
+        margin-bottom:0;
+        
+    }
+
+    /* Stlying and positioning the subheading */
+    h2{
+        margin-top:0;
+        text-align: center;
+        font-size: 7vw;
+    }
+
+    /* Stlying the boxes for desktop devices in a 1 row per column layout */
+    .gameBoxes {
+        display:grid;
+        grid-template-columns: 1;
+        grid-template-rows: auto auto auto;
+        font-size: 7vw;
+        grid-row-gap: 3%;
+        margin: 2%;
+    }
+
+    /* Stlying and positioning the boxes within the gameboxes grid layout */
+    .game{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Declaring the title, Character set, stylesheet used and author name-->
+    <meta charset="utf-8" />
+    <title>GameScreens: Fortnite</title>
+    <link rel="stylesheet" href="gameStyles.css" />
+    <meta name="Adam Carter" content="EMA" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body onload = controller.getImage()>
+    <h1><a href="index.html">GameScreens</a></h1>
+    <h2>A Place to share video game screenshots and artwork</h2>
+        <ul class = "navigation">
+            <li class="navElement"><a href = "game1.html">League of Legends</a></li>
+            <li class="navElement"><a href = "game2.html">Counter Strike: Global Offensive</a></li>
+            <li class="navElement active"><a href = "game3.html">Fortnite</a></li>
+        </ul>
+    </div>
+    <div class="imageBoxes" id ="imageBoxesId">
+
+    </div>
+    <input type="file" accept="image/x-png,image/gif,image/jpeg" id = "uploadSelector"/>
+    <button id = "uploadButton" onclick="controller.confirmImage()">Upload new image</button>
+    <script src="script.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+
+</body>

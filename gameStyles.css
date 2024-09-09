@@ -1,0 +1,218 @@
+/* GameScreens Stylesheet Gamepage*/
+
+/* Default styling for the page */
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    background-color: grey;
+}
+
+/* Styling the headings */
+h1 a{
+    text-decoration: none; 
+    color:black;
+}
+
+/* Layot for image boxes which is in the grid layout */
+.imageBoxes{
+    display: grid;
+}
+
+/* Centering the text within the navigation bar */
+.navigation{
+    text-align: center;
+}
+
+/* Removing the list decoration from the navigation bar */
+.navigation li{
+    list-style-type: none;
+    outline-style: solid; 
+}
+
+/* Removing the hyperlink decoration from the navigation bar */
+.navigation li a{
+    text-decoration: none; 
+    color:black;
+}
+
+/* Making the outline bold for the current page within the navigation bar */
+.active{
+    outline-width: thick;
+}
+
+/*Media query for desktop and laptop devices layout*/
+@media screen and (min-width: 900px){
+
+    /* Stlying and positioning the heading */
+    h1{
+        text-align: center;
+        font-size: 3vw;
+        margin-bottom:0;
+        
+    }
+
+    /* Stlying and positioning the subheading */
+    h2{
+        text-align: center;
+        font-size: 1vw;
+    }
+
+
+    /* Styling the navigation bar which is a grid of 1 row and three columns */
+    .navigation{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        font-size: 2vw;
+        width: 75%;
+        padding-left: 12%;
+    }
+
+    /* Adding an onhover attribute which allows the outline of the navigation bar to go bold when hovered */
+    .navElement:hover{
+        outline-width: thick;
+    }
+
+    /* Adding the styling for the image boxes which is a 3 row grid */
+    .imageBoxes{
+        grid-template-columns: auto auto auto ;
+        grid-template-rows: auto auto auto;
+        grid-gap: 3%;
+
+    }
+
+    /* Adding an outine to the images so they remain distinct from each other */
+    .image{    
+        outline-style: solid;
+        margin: 1%;
+        padding:0;
+        width: fit-content;
+        block-size: fit-content;
+    }
+
+    /* Setting the images width and height  */
+    .image img{
+        display: block;
+        height: auto;
+        width: 25vw;
+        height: auto;
+    }
+
+    /* Stlying the browse file selector */
+    #uploadSelector{
+        margin-left: 55vw;
+        font-size: 1.5vw;
+        background-color: white;
+        border: 2px solid black;
+    }
+
+    /* Adding a hover style for the browse file selector */
+    #uploadSelector:hover{
+        background-color: black;
+        border: 2px solid white;
+        font-size: 1.5vw;
+        color: white;
+    }
+
+    /* Styling the upload button */
+    #uploadButton{
+        padding: 0.5vw;
+        margin-left: 0.5vw;
+        margin-top: 10vw;
+        margin-bottom: 2vw;
+        font-size: 1.5vw;
+        background-color: white;
+        border: 2px solid black;
+    }
+
+    /* Adding a hover style for the upload button */
+    #uploadButton:hover{
+        background-color: black;
+        border: 2px solid white;
+        font-size: 1.5vw;
+        color: white;
+    }
+
+}
+/*Media query and layout for mobile phones*/
+@media screen and (max-width: 900px) {
+
+    /* Stlying and positioning the heading */
+    h1{
+        text-align: center;
+        font-size: 11vw;
+        margin-bottom:0;
+    }
+
+    /* Stlying and positioning the subheading */
+    h2{
+        margin-top:0;
+        text-align: center;
+        font-size: 6vw;
+    }
+
+    /* Styling the navigation bar which is a grid of 1 column and three rows */
+    .navigation{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-gap: 5%;
+        font-size: 7vw;
+        padding: 0;
+        margin: 1%;
+        margin-bottom: 10%;
+    }
+
+
+    /* Adding spacing between the navigation elements */
+    .navigation li{
+        padding: 5%;
+    }
+
+    /* Stlying for the image layout which is a 1 x 1 grid */
+    .imageBoxes{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    /* Adding an outline to each image and setting it's positioning  */
+    .image{    
+        outline-style: solid;
+        margin: 6%;
+        width: fit-content;
+        block-size: fit-content;
+        margin: 5%;
+    }
+
+    /* Setting the images width and height  */
+    .image img{
+        display: block;
+        height: auto;
+        width: 90vw;
+        height: auto;
+        margin: 0;
+    }
+
+    /* Styling the upload button */
+    #uploadButton{
+        width: 95vw;
+        padding: 3vw;
+        display:block;
+        margin-left: 2.5vw;
+        text-align: center;
+        font-size: 6vw;
+        background-color: white;
+        border: 2px solid black;
+    }
+
+    /* Stlying the browse file selector */
+    #uploadSelector{
+        width: 95vw;
+        font-size: 6vw;
+        background-color: white;
+        border: 2px solid black;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+        margin-left: 2.5vw;
+    }
+}
